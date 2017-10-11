@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+
+	<meta name="description" content="Violate Responsive Admin Template">
+	<meta name="keywords" content="Super Admin, Admin, Template, Bootstrap">
+
+	<title>Super Admin Responsive Template</title>
+
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" th:href="@{/assets/css/bootstrap.min.css}">
+	<link href="css/form.css" rel="stylesheet" th:href="@{/assets/css/form.css}">
+	<link href="css/style.css" rel="stylesheet" th:href="@{/assets/css/style.css}">
+	<link href="css/animate.css" rel="stylesheet" th:href="@{/assets/css/animate.css}">
+	<link href="css/generics.css" rel="stylesheet" th:href="@{/assets/css/generics.css}">
+</head>
+<body id="skin-blur-violate">
+<section id="login">
+	<header>
+		<h1>XX系统</h1>
+		<p>该系统使用XX登录</p>
+	</header>
+
+	<div class="clearfix"></div>
+
+	<!-- Login -->
+	<form class="box tile animated active" id="box-login" th:action="@{/login}" method="post">
+		<h2 class="m-t-0 m-b-15">登录信息</h2>
+		<input type="text" class="login-control m-b-10" placeholder="Username or Email Address" name="username">
+		<input type="password" class="login-control" placeholder="Password" name="password">
+		<div class="checkbox m-b-20">
+			<label><input type="checkbox">记住</label>
+			&nbsp;<span th:if="${session.SPRING_SECURITY_LAST_EXCEPTION}" class="text-danger" th:text="${session.SPRING_SECURITY_LAST_EXCEPTION.message}">有错误，请重试</span>
+		</div>
+		<button class="btn btn-sm m-r-5">登录</button>
+
+		<small>
+			<a class="box-switcher" data-switch="box-register" href="">注册</a> or
+			<a class="box-switcher" data-switch="box-reset" href="">忘记密码</a>
+		</small>
+	</form>
+
+	<!-- Register -->
+	<form class="box animated tile" id="box-register">
+		<h2 class="m-t-0 m-b-15">注册</h2>
+		<input type="text" class="login-control m-b-10" placeholder="Full Name">
+		<input type="text" class="login-control m-b-10" placeholder="Username">
+		<input type="email" class="login-control m-b-10" placeholder="Email Address">
+		<input type="password" class="login-control m-b-10" placeholder="Password">
+		<input type="password" class="login-control m-b-20" placeholder="Confirm Password">
+
+		<button class="btn btn-sm m-r-5">注册</button>
+
+		<small>已经注册?<a class="box-switcher" data-switch="box-login" href="">返回至登录</a></small>
+	</form>
+
+	<!-- Forgot Password -->
+	<form class="box animated tile" id="box-reset">
+		<h2 class="m-t-0 m-b-15">重置密码</h2>
+		<p>重新设置密码.请填写你注册的邮箱</p>
+		<input type="email" class="login-control m-b-20" placeholder="Email Address">
+
+		<button class="btn btn-sm m-r-5">重置密码</button>
+
+		<small>已经注册?<a class="box-switcher" data-switch="box-login" href="">返回至登录</a></small>
+	</form>
+</section>
+
+<!-- Javascript Libraries -->
+<!-- jQuery -->
+<script src="js/jquery.min.js" th:src="@{/assets/js/jquery.min.js}"></script> <!-- jQuery Library -->
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js" th:src="@{/assets/js/bootstrap.min.js}"></script>
+
+<!--  Form Related -->
+<script src="js/icheck.js" th:src="@{/assets/js/icheck.js}"></script> <!-- Custom Checkbox + Radio -->
+
+<!-- All JS functions -->
+<script src="js/functions.js" th:src="@{/assets/js/functions.js}"></script>
+</body>
+</html>

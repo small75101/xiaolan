@@ -1,25 +1,25 @@
-Ä£¿é				
-com.xiaolan.common.dao	ÈıÖÖ--	dao.db	dao.redis	dao.kafka
-com.xiaolan.common.service				
-com.xiaolan.common.exception				
-com.xiaolan.common.filter				
-com.xiaolan.common.interceptor				
-com.xiaolan.common.bean				
-com.xiaolan.common.util				
-com.xiaolan.common.config				
-com.xiaolan.common.config.dic	³£Á¿--Êı¾İ×Ö¶Î			
-				
-com.xiaolan.log				
-				
-manager	ºó¶Ë			
-	Ç°¶Ë			
-music				
-				
-Ö÷ÅäÖÃÎÄ¼ş				
-jdbc.properties				
-log4j.properties				
-spring-mvc.xml				
-applicationContext.xml				
-system.properties	ÏµÍ³ÅäÖÃĞÅÏ¢			
+æ¨¡å—
+com.xiaolan.common.dao	ä¸‰ç§--	dao.db	dao.redis	dao.kafka
+com.xiaolan.common.service
+com.xiaolan.common.exception
+com.xiaolan.common.filter
+com.xiaolan.common.interceptor
+com.xiaolan.common.bean
+com.xiaolan.common.util
+com.xiaolan.common.config
+com.xiaolan.common.config.dic	å¸¸é‡--æ•°æ®å­—æ®µ
+
+com.xiaolan.log
+
+manager	åç«¯
+	å‰ç«¯
+music
+
+ä¸»é…ç½®æ–‡ä»¶
+jdbc.properties
+log4j.properties
+spring-mvc.xml
+applicationContext.xml
+system.properties	ç³»ç»Ÿé…ç½®ä¿¡æ¯
 mybaits.xml		dbcp		
 hibernate.xml				
